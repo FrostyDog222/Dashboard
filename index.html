@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+            <meta charset="UTF-8" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="index.css">
+            <title>Personal Dashboard</title>
+        </head>
+        <body>
+            <main>    
+                <div class="top">
+        
+                    <div id="crypto">
+                        <div id="crypto-top"></div>
+                        <div id="crypto-bottom"></div>
+                    </div>
+                    
+                    <div class="crypto-data">
+                        <input id="crypto-input" type="text" placeholder="Search crypto">
+                        <button id="crypto-btn"><img class="btn-img" src="search.png"></button>
+                    </div>
+    
+                    <div class="weather-box">
+                        <div id="weather"></div>
+                        <button id="change-units"></button>
+                     </div>
+    
+                </div>
+    
+                <div id="clock">
+                    <h1 id="time" class="time"></h1>
+                    <button id="time-format">Change Format</button>
+                </div>
+    
+                <div id="facts">
+                    <p id="random-fact"></p>
+                    <button id="new-fact">Get new Fact</button>
+                </div>
+    
+                <a id="author"></a>
+            </main>
+            <script src="index.js"></script>
+        </body>
+    </html>

@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #242424;
+}
+
+main {
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Clock */
+h1.time, #time-format{
+    padding: 0;
+    margin: 0;
+}
+
+h1.time {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Audiowide', cursive;
+}
+
+#clock{
+    align-self: center;
+    text-align: center;
+}
+
+#time-format,
+#change-units{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(190, 185, 185, 0.6);
+}
+
+#time-format:active,
+#new-fact:active,
+#change-units:active{
+        box-shadow: 0 3px rgba(104, 101, 101, 0.6);
+        transform: translateY(3px);
+        cursor: pointer;
+}
+
+#time-format:hover,
+#new-fact:hover,
+#crypto-btn:hover,
+#change-units:hover{
+    cursor: pointer;
+    background-color: rgb(212, 209, 209);
+}
+
+/* Random useless facts */
+#facts{
+    align-self: center;
+    text-align: center;;
+    background-color: rgba(104, 101, 101, 0.6);
+    border-radius: 50px;
+    width: 60rem;
+}
+
+#random-fact{
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding: 1rem 1rem 0 1rem;
+}
+
+#new-fact{
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0.6rem;
+}
+
+/* Crypto */
+div#crypto > p,
+p.weather-city,
+p.weather-temp {
+    margin: 0;
+}
+
+div#crypto {
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+}
+
+div#crypto-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+div#crypto-top > span {
+    margin-left: 10px;
+}
+
+input {
+    background: rgb(247, 247, 247, 0.6);
+}
+
+input,
+::placeholder{
+    width: 9rem;
+    height: 1.7rem;
+    color: rgb(37, 35, 35);
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding-left: 3px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.crypto-data{
+    position: absolute;
+    top: 5px;
+}
+
+#crypto-btn{
+    border-radius: 50px;
+    transform: translateY(4px)
+}
+
+#crypto-btn:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(8px);
+}
+
+.btn-img{
+    width: 20px;
+    object-fit: cover;
+}
+
+p.crypto{
+    margin: 4px;
+}
+
+/* Weather */
+div#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin-top: -20px;
+}
+
+div#weather > img {
+    width: 70px;
+}
+
+p.weather-city {
+    width: 100%;
+    text-align: right;
+    margin-top: -10px;
+}
+
+p.weather-temp {
+    font-size: 1.7rem;
+    margin-left: -10px;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#change-units {
+    width: 3rem;
+    margin: 0.6rem 0 0 auto;
+}
+
+/* Image Author */
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0px 0px 20px #242424;
+    font-size: 1.1rem;
+}
+
