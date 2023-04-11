@@ -42,7 +42,7 @@ h1.time, #time-format{
 
 h1.time {
     text-align: center;
-    font-size: 6rem;
+    font-size: 7rem;
     font-family: digi;
 }
 
@@ -83,6 +83,7 @@ h1.time {
     background-color: rgba(104, 101, 101, 0.7);
     border-radius: 50px;
     width: 60rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #random-fact{
