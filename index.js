@@ -25,7 +25,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         document.body.style.backgroundImage = `url(${data.urls.full})`
 		document.getElementById("author").innerHTML = `<a target="blank_" 
             href="https://www.instagram.com/${data.user.instagram_username}/">
-            By: ${data.user.name}
+            Photo credit: ${data.user.name}
             </a>
             `
     })
@@ -35,7 +35,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         url(https://images.unsplash.com/photo-1560008511-11c63416e52d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTEwMjl8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI4NDIxMTc&ixlib=rb-1.2.1&q=80&w=1080)
         `
 		document.getElementById("author").innerHTML = `<a target="blank_" 
-        href="https://unsplash.com/@dodiachmad">By: Dodi Achmad
+        href="https://unsplash.com/@dodiachmad">Photo credit: Dodi Achmad
         </a>
         `
     })
