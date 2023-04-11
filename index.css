@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }    
 
+@font-face {
+    font-family: digi;
+    src: url(DS-DIGIB.TTF)
+}
+
 body {
     margin: 0;
     background: no-repeat center center fixed; 
@@ -10,7 +15,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
     text-shadow: 0px 0px 20px #242424;
 }
 
@@ -31,12 +37,13 @@ div.top {
 h1.time, #time-format{
     padding: 0;
     margin: 0;
+    
 }
 
 h1.time {
     text-align: center;
-    font-size: 4rem;
-    font-family: 'Audiowide', cursive;
+    font-size: 6rem;
+    font-family: digi;
 }
 
 #clock{
@@ -50,7 +57,7 @@ h1.time {
     border-radius: 5px;
     border: none;
     font-weight: bold;
-    background-color: rgb(190, 185, 185, 0.6);
+    background-color: rgb(190, 185, 185, 0.7);
 }
 
 #time-format:active,
@@ -73,7 +80,7 @@ h1.time {
 #facts{
     align-self: center;
     text-align: center;;
-    background-color: rgba(104, 101, 101, 0.6);
+    background-color: rgba(104, 101, 101, 0.7);
     border-radius: 50px;
     width: 60rem;
 }
