@@ -194,6 +194,13 @@ p.weather-temp {
     flex-direction: column;
 }
 
+.weather-description {
+    width: 100%;
+    text-align: right;
+    margin-top: -16px;
+    margin-bottom: 16px;
+}
+
 #change-units {
     width: 3rem;
     margin: 0.6rem 0 0 auto;

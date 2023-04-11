@@ -157,11 +157,11 @@ function getWeatherData(){
                 })
                 .then(data => {
                 // Getting the wheather icons for every weather
-                    
                     const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
                     document.getElementById("weather").innerHTML = `
                         <img src=${iconUrl} />
                         <p class="weather-temp">${Math.round(data.main.temp)}${temperature}</p>
+                        <p class="weather-description">${data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)}</p>
                         <p class="weather-city">${data.name}</p>
                     `
                 })
