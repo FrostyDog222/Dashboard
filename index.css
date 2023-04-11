@@ -186,19 +186,26 @@ p.weather-city {
 
 p.weather-temp {
     font-size: 1.7rem;
-    margin-left: -10px;
+    margin-left: -15px;
+    margin-top: -16px;
+    font-size: 35px;
 }
 
 .weather-box {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 
 .weather-description {
     width: 100%;
     text-align: right;
-    margin-top: -16px;
+    margin-top: -20px;
     margin-bottom: 16px;
+}
+
+.weatherIcon {
+    margin: 0.4em 2em 0 0;
 }
 
 #change-units {

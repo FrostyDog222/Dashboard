@@ -18,6 +18,8 @@ timeFormat = timeFormatFromLocalStorage
 temperature = temperatureFromLocalStorage
 units = unitsFromLocalStorage
 
+
+
 // Background Picture and author and also links us to the author instagram profile using an anchor tag
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
     .then(res => res.json())
@@ -147,6 +149,7 @@ fetch('https://api.coingecko.com/api/v3/coins/list')
 
 // Geolocation is finding your latitude and longitude and by using a weather api it can get the best weather data from your area
 function getWeatherData(){
+    
     navigator.geolocation.getCurrentPosition(position => {
         fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=${units}`)
                 .then(res => {
@@ -157,9 +160,54 @@ function getWeatherData(){
                 })
                 .then(data => {
                 // Getting the wheather icons for every weather
-                    const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+                let weatherIcon = "";
+
+                switch (data.weather[0].icon) {
+                  case "01d":
+                    weatherIcon = './icons/sun.png';
+                    break;
+                  case "01n":
+                    weatherIcon = './icons/clear-sky-night.png';
+                    break;
+                  case "02d":
+                    weatherIcon = './icons/few-clouds-day.png';
+                    break;
+                  case "02n":
+                    weatherIcon = './icons/few-clouds-night.png';
+                    break;
+                  case "03d":
+                  case "03n":
+                    weatherIcon = './icons/scattered clouds.png';
+                    break;
+                  case "04d":
+                  case "04n":
+                    weatherIcon = './icons/broken-clouds.png';
+                    break;
+                  case "09d":
+                  case "09n":
+                    weatherIcon = './icons/shower-rain.png';
+                    break;
+                  case "10d":
+                  case "10n":
+                    weatherIcon = './icons/rain.png';
+                    break;
+                  case "11d":
+                  case "11n":
+                    weatherIcon = './icons/thunderstorm.png';
+                    break;
+                  case "13d":
+                  case "13n":
+                    weatherIcon = './icons/snow.png';
+                    break;
+                  case "50d":
+                  case "50n":
+                    weatherIcon = './icons/mist.png';
+                    break;
+                  default:
+                    break;
+                }
                     document.getElementById("weather").innerHTML = `
-                        <img src=${iconUrl} />
+                        <img class="weatherIcon" src=${weatherIcon} />
                         <p class="weather-temp">${Math.round(data.main.temp)}${temperature}</p>
                         <p class="weather-description">${data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)}</p>
                         <p class="weather-city">${data.name}</p>
