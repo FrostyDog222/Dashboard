@@ -68,7 +68,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         })
         .then(data => {
             document.getElementById("crypto-top").innerHTML = `
-                <img src=${data.image.small} />
+                <img class="crypto-img" src=${data.image.large} />
                 <span>${data.name}<span>
             `
             document.getElementById("crypto-bottom").innerHTML = `

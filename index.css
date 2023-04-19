@@ -80,16 +80,18 @@ h1.time {
 #facts{
     align-self: center;
     text-align: center;;
-    background-color: rgba(104, 101, 101, 0.7);
-    border-radius: 50px;
-    width: 60rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #random-fact{
     font-size: 1.2rem;
     font-weight: 550;
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem;
+    background-color: rgba(104, 101, 101, 0.7);
+    border-radius: 50px;
+    max-width: 60rem;
+    max-height: 15rem;
+
 }
 
 #new-fact{
@@ -153,6 +155,11 @@ input:focus{
 #crypto-btn:active {
     box-shadow: 0 3px #666;
     transform: translateY(8px);
+}
+
+.crypto-img {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .btn-img{
@@ -220,3 +227,182 @@ a{
     font-size: 1.1rem;
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    main {
+        padding: 2rem;
+        height: 100rem;
+    }
+    
+    /* Clock */
+    h1.time, #time-format{
+        padding: 5rem 0 0;
+        margin: 0;
+    }
+    
+    h1.time {
+        text-align: center;
+        font-size: 13.3rem;
+        font-family: digi;
+        margin: -3rem 0 0 0;
+        padding: 0;
+    }
+    
+    #time-format,
+    #change-units{
+        padding: 1.5rem;
+        border-radius: 20px;
+        font-size: 3rem;
+    }
+
+    /* Random useless facts */
+    #facts{
+        display: inline-block;
+        border-radius: 50px;
+    }
+
+    #random-fact{
+        font-size: 2.6rem;
+        font-weight: 550;
+        padding: 1.5rem;
+        border-radius: 50px;
+        max-height: 30rem;
+        max-width: 60rem;
+    }
+
+    #new-fact{
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        border: none;
+        padding: 0.2rem;
+        width: 20rem;
+        height: 3em;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+
+    /* Crypto */
+    div#crypto > p,
+    p.weather-city,
+    p.weather-temp {
+        margin: 0;
+    }
+
+    div#crypto {
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+
+    div#crypto-top {
+        margin: 1.5rem 0 0 1rem;
+        font-size: 4rem;
+    }
+
+    div#crypto-top > span {
+        margin-left: 10px;
+    }
+
+    input {
+        margin: 0 .8rem 0 -2rem;
+    }
+
+    input,
+    ::placeholder{
+        width: 20rem;
+        height: 5rem;
+        font-size: 3rem;
+        border-radius: 50px;
+        padding: 1rem;
+    }
+    .crypto-data{
+        position: absolute;
+        top: 5px;
+        margin: 0;
+    }
+
+    #crypto-btn{
+        border-radius: 50px;
+        width: 6rem;
+        height: 5.5rem;
+        transform: translateY(1rem)
+    }
+
+    #crypto-btn:active {
+        box-shadow: 0 3px #666;
+        transform: translateY(25px);
+    }
+
+    .btn-img{
+        width: 4rem;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    p.crypto{
+        margin: 1rem .5rem;
+        font-size: 3.5rem;
+    }
+
+    .crypto-img {
+        width: 8rem;
+        height: 8rem;
+        margin: 0 .2rem 0 -2rem;
+    }
+
+    /* Weather */
+    div#weather {
+        margin-top: -4rem;
+    }
+
+    div#weather > img {
+        width: 13rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    p.weather-city {
+        width: 100%;
+        margin-top: -1rem;
+        font-size: 5rem;
+    }
+
+    p.weather-temp {
+        font-size: 1.7rem;
+        margin-left: -2rem;
+        margin-top: .3rem;
+        font-size: 6rem;
+    }
+
+    .weather-box {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .weather-description {
+        width: 100%;
+        text-align: right;
+        font-size: 4rem;
+        margin: -20px 0 16px 0;
+    }
+
+
+    #change-units {
+        width: 7rem;
+        height: 7rem;
+        font-size: 4rem;
+        margin: 0.6rem 0 0 auto;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    /* author */
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+        text-shadow: 2px 2px 5px black;
+        font-size: 2.4rem;
+    }
+}
