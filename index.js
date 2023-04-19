@@ -177,7 +177,7 @@ function getWeatherData(){
                     break;
                   case "03d":
                   case "03n":
-                    weatherIcon = './icons/scattered clouds.png';
+                    weatherIcon = './icons/scattered-clouds.png';
                     break;
                   case "04d":
                   case "04n":
