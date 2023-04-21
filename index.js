@@ -87,14 +87,6 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         })
     }
 
-// Make a search bar for the crypto search
-fetch('https://api.coingecko.com/api/v3/coins/list')
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-    })
-
-
     // Getting the device time and displaying using new Date() 
     // timeFormat is changing the clock format from 12 Hours to 24 Hours and vice versa
     // timestyle is telling us how to show the time medium = hours:mins:sec / short = hours:mins: sec etc
@@ -173,7 +165,7 @@ function getWeatherData(){
                     weatherIcon = './icons/few-clouds-day.png';
                     break;
                   case "02n":
-                    weatherIcon = './icons/few-clouds-night.png';
+                    weatherIcon = './icons/weather-few-clouds-night.png';
                     break;
                   case "03d":
                   case "03n":
