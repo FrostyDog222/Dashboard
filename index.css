@@ -198,7 +198,7 @@ p.weather-city {
     width: 100%;
     text-align: right;
     margin-top: -10px;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
 }
 
 p.weather-temp {
@@ -217,7 +217,7 @@ p.weather-temp {
     width: 100%;
     text-align: right;
     margin: -8px 0 16px 0;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .weatherIcon {
@@ -234,6 +234,6 @@ a{
     text-decoration: none;
     color: whitesmoke;
     text-shadow: 2px 2px 5px black;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
 }
 
